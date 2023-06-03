@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: #23272a;
+}
+main {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 100%;
+  gap: 10px;
+}
+#output {
+  height: 100%;
+  overflow: auto;
+}

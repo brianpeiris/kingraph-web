@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "esbuild --external:svg2png --bundle --watch --serve --servedir=. --outfile=bundle.js main.js",
+    "build": "esbuild --external:svg2png --bundle --outfile=bundle.js main.js"
+  },
+  "dependencies": {
+    "@codemirror/legacy-modes": "^6.3.2",
+    "@ddietr/codemirror-themes": "^1.4.1",
+    "codemirror": "^6.0.1",
+    "esbuild": "^0.17.19",
+    "js-yaml": "^4.1.0",
+    "kingraph": "github:AlexanderWillner/kingraph"
+  }
+}
