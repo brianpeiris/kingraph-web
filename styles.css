@@ -1,12 +1,14 @@
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   height: 100%;
   margin: 0;
   background: #23272a;
 }
+
 main {
   padding: 10px;
   display: grid;
@@ -14,7 +16,20 @@ main {
   height: 100%;
   gap: 10px;
 }
+
 #output {
   height: 100%;
   overflow: auto;
+}
+
+svg {
+  transform: scale(0.8);
+  transform-origin: top left;
+}
+
+@media (max-width: 950px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+  }
 }
